@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /api
+  port: 8080
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/bancodesangue
+    username: root
+    password: ''
+  jpa:
+    hibernate:
+      ddl-auto: update
